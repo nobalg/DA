@@ -9,6 +9,8 @@ public class BST implements BSTOperations {
 		this.rootNode = node;
 		this.count = 1;
 	}
+	
+	/*************O(log n)****************************/
 	@Override
 	public void insertNode(Node node, int data) {
 		Node temp = node;
@@ -39,7 +41,8 @@ public class BST implements BSTOperations {
 			}
 		}
 	}
-			
+	
+	
 	public Node findMinInTree(Node node)
 	{
 		while(node.getLeftChildNode()!=null)
